@@ -1,0 +1,23 @@
+name = "markdown_server"
+version = "1.0.0"
+gleam = ">= 0.32.0"
+
+# Fill out these fields if you intend to generate HTML documentation or publish
+# your project to the Hex package manager.
+#
+# description = ""
+# licences = ["Apache-2.0"]
+# repository = { type = "github", user = "username", repo = "project" }
+# links = [{ title = "Website", href = "https://gleam.run" }]
+
+[dependencies]
+gleam_stdlib = "~> 0.32"
+gleam_elli = "~> 2.3"
+elli = "~> 3.3"
+#kirala_bbmarkdown = { git = "https://github.com/Yasuo-Higano/kirala_bbmarkdown" }
+kirala_bbmarkdown = { path = "./deps/kirala_bbmarkdown" }
+cowlib = "~> 2.12"
+gleam_erlang = "~> 0.24"
+
+[dev-dependencies]
+gleeunit = "~> 1.0"
